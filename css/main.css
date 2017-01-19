@@ -17,7 +17,7 @@ html {
 }
 
 .polaroid:first-child {
-  left: 15%;
+  left: 25%;
   top: 100px;
   transform: rotate(-11deg;)
 }
@@ -29,9 +29,10 @@ html {
   z-index: 10000;
 }
 
-.polariod > img {
-  display: block;
-  width: 100%;
+.polaroid:last-child {
+  top: 100px;
+  left: 40;
+  transform: rotate(33deg);
 }
 
 .polaroid > img {
@@ -39,7 +40,14 @@ html {
   width: 100%;
 }
 
-.polaroid > figcaption {
+.polariod > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+}
+
+.polaroid:hover {
+
+  box-shadow: 0 0 30px 6px rgba(0, 0, 0, .5);
+  transform: rotate(0);
+  z-index: 20000;
 }
